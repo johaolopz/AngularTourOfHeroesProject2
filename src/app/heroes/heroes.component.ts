@@ -4,6 +4,8 @@ import { Component, OnInit } from '@angular/core';
 //El Hero es el que se definió abajo en el export
 import {Hero} from '../hero';
 
+import {HEROES} from '../mock-heroes';
+
 @Component({
   selector: 'app-heroes',
   templateUrl: './heroes.component.html',
@@ -15,6 +17,9 @@ export class HeroesComponent implements OnInit {
     name : 'Ironman',
     color: 'rojo'
   };
+
+  heroes = HEROES;
+
   constructor() { }
 
   ngOnInit() {
