@@ -1,20 +1,3 @@
-<div *ngIf="selectedHero">
-
-<!--El uppercase luego de un símbolo | dentro de la llamada angular sirve para
-convertir el texto en MAYÚSCULAS-->
-<h2>Detalles de {{selectedHero.name | uppercase}}</h2>
-<div><span>Id: </span>{{selectedHero.id}}</div>
-<div><span>Nombre: </span>{{selectedHero.name}}</div>
-<div><span>Color: </span><span class="X{{selectedHero.color}}">■■■■■■■</span></div>
-
-<div>
-    <label>Editor Nombre:
-    <input [(ngModel)]="selectedHero.name" placeholder="escriba nombre del héroe">
-    </label>
-</div>
-
-</div>
-
 <h3>SECOND CHAPTER (II)</h3>
 <h2>My Heroes</h2>
 <ul class="heroes">
@@ -24,3 +7,5 @@ convertir el texto en MAYÚSCULAS-->
 <span class="badge">{{hero.id}}</span> {{hero.name}} <span class="colorHeroes" id="{{hero.color}}">Traje</span>
 </li>
 </ul>
+
+<app-hero-detail [hero]="selectedHero"></app-hero-detail>
