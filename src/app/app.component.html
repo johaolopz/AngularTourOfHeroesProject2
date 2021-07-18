@@ -1,8 +1,15 @@
 <div>
 <h1>{{title}}</h1>
 </div>
-<!--De esta manera se llama al componente-->
-<app-heroes></app-heroes>
+
+<nav>
+    <a routerLink="/dashboard">Dashboard</a>
+    <a routerLink="/heroes">Heroes</a>
+</nav>
+
+<!--Aquí se elimina esta línea porque con el routing
+    se va a dirigir solo hacia el HeroesComponent
+    <app-heroes></app-heroes>-->
 
 <router-outlet></router-outlet>
 <app-messages></app-messages>

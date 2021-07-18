@@ -7,14 +7,16 @@ import { HeroesComponent } from './heroes/heroes.component';
 
 import { FormsModule } from '@angular/forms';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
-import { MessagesComponent } from './messages/messages.component'; // <-- Aquí se importa el NgModel para que sea reconocido por angular
+import { MessagesComponent } from './messages/messages.component';
+import { DashboardComponent } from './dashboard/dashboard.component'; // <-- Aquí se importa el NgModel para que sea reconocido por angular
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroesComponent,
     HeroDetailComponent,
-    MessagesComponent
+    MessagesComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

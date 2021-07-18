@@ -1,11 +1,10 @@
 <h3>SECOND CHAPTER (II)</h3>
 <h2>My Heroes</h2>
 <ul class="heroes">
-<li *ngFor="let hero of heroes"
-[class.selected]="hero === selectedHero"
-(click)="onSelect(hero)">
-<span class="badge">{{hero.id}}</span> {{hero.name}} <span class="colorHeroes" id="{{hero.color}}">Traje</span>
+    <!--Ahora eliminamos evento click y agregamos un anchor con routerLink-->
+<li *ngFor="let hero of heroes">
+    <a routerLink="/detail/{{hero.id}}">
+    <span class="badge">{{hero.id}}</span> {{hero.name}} <span class="colorHeroes" id="{{hero.color}}">Traje</span>
+    </a>
 </li>
 </ul>
-
-<app-hero-detail [hero]="selectedHero"></app-hero-detail>

@@ -15,11 +15,11 @@ import { HeroService } from '../hero.service';
 })
 
 export class HeroesComponent implements OnInit {
-
-  selectedHero: Hero;
-  onSelect(hero: Hero): void {
-    this.selectedHero = hero;
-    }    
+  //ESTE CÓDIGO MURIÓ +++RIP+++
+  //selectedHero: Hero;
+  //onSelect(hero: Hero): void {
+  //  this.selectedHero = hero;
+  //  }    
 
   //se actualiza esta línea
   //heroes = HEROES;
